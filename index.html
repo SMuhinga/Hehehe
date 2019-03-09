@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family:Georgia;
+}
+
+/* Logo Title */
+.header {
+  text-align: center;
+  background:slategray;
+  color: white;
+  border-style: ridge;
+  border-color: slategrey;
+  height:auto;
+}
+
+/* Column container */
+.row {  
+  display:flex;
+  flex-wrap:wrap;
+  background-image: url("1.jpg");
+  background-size:cover;
+  height: auto;
+  border-style: solid;
+  text-decoration: none;
+}
+
+
+.row img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Tenant/Rental Owner column */
+.tenant {
+  flex: 50%;
+  padding: 120px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.rentalowner {
+  flex: 50%;
+  padding: 120px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  padding:5px;
+  height: auto;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:visited {
+  color:orangered;
+  text-decoration: none;
+}
+
+a:hover {
+  color:blue;
+  text-decoration: none;
+}
+
+a:active {
+  color: green;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+        <div class="header">
+                <h2>Rental Management System</h2>
+                <h3>Welcome</h3>
+                <p><strong>Easy. Simple. Flexible.</strong></p>
+              </div>
+        
+        <div class="row">
+
+            <div class="tenant"> 
+                 <p>   <img src="user3.png" alt="House Avatar"> </p>
+                 <a href="houses.php"><h2>Clients</h2></a>
+                </div>
+            <div class="rentalowner"> 
+                  <p>  <img src="user2.png" alt="Rentalowner Avatar"> </p>
+                   <a href="log.html"><h2>Rental Owners</h2></a>
+                </div>
+        </div>     
+
+        <div class="footer">
+            <p>2019</p>
+              </div>
+</body>
+</html>
